@@ -1,0 +1,9 @@
+#container {
+    height: fit-content;
+    width: 70%;
+    margin: 10px auto;
+    position: relative;
+}
+.btn1 {
+    border-radius: 10px;
+}

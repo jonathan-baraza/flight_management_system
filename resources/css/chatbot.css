@@ -1,0 +1,49 @@
+#chatbot_min {
+    cursor: pointer;
+    width: 15vw;
+}
+#chatbot_min:hover {
+    cursor: pointer;
+}
+#close_chatbot {
+    color: #808080 !important;
+}
+#close_chatbot:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+#chatArea {
+    width: 20vw;
+    height: 300px;
+    overflow-y: auto;
+    border-radius: 10px;
+}
+
+.disabled {
+    color: gray;
+}
+
+.chat_bubble {
+    width: fit-content;
+    max-width: 60%;
+    font-size: 14px;
+    border-radius: 15px;
+    margin-top: 2px;
+}
+
+@media only screen and (max-width: 600px) {
+    #chatbot_min {
+        cursor: pointer;
+        width: fit-content !important;
+    }
+    #chatArea {
+        width: 70vw !important;
+        min-height: 10vh !important;
+        overflow-y: auto;
+        border-radius: 10px;
+    }
+    #chatboxSendBtn {
+        font-size: 20px !important;
+    }
+}
