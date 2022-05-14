@@ -65,5 +65,5 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 =======
 # flight_management_system
-A web based application that can be used by a flight company to manage flights as well as customers. It has the functionality to allow booking and changing flights etc.
+A web based application that can be used by a flight company to manage flights as well as customers. It has the functionality to allow booking and changing flights etc. It has MPESA payments Integration.
 
