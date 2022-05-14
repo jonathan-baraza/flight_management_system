@@ -32,7 +32,6 @@
         <h6 style="width:fit-content" class="mx-auto">Let's connect you to the world!</h6>
         <center><button style="margin:10px auto;" class="btn btn-info m-2">Check available flights</button></center>
       </div>
-      
     </div>
     <div class="carousel-item">
       <img src="/storage/system_pics/planeTwo.jpg" class="d-block w-100 img-fluid carousel-image" style="height:100vh;" alt="...">
@@ -49,6 +48,10 @@
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button>
+</div>
+
+<div id="flightsHome" class="p-0 position-relative">
+
 </div>
 
 

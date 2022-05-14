@@ -1,0 +1,29 @@
+.tab {
+    background-color: #f8f9fa;
+    width: fit-content;
+}
+.tab:hover {
+    background-color: #d5dbe1;
+}
+.trip_select_btn :hover {
+    background-color: #d5dbe1 !important;
+    color: black !important;
+}
+
+#searchFlightBtn {
+    border-radius: 25px;
+    width: 150px;
+    margin-right: 15px;
+    padding: 10px;
+}
+
+.main-flight-div {
+    padding: 0px;
+}
+@media only screen and (max-width: 600px) {
+    .main-flight-div {
+        padding: 5px !important;
+        display: flex;
+        justify-content: center;
+    }
+}

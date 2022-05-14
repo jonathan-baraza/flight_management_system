@@ -11,4 +11,11 @@ class Flight extends Model
     protected $fillable=["departure_location","destination_location","departure_date","arrival_date","class_A_capacity","class_A_price","class_B_capacity","class_B_price","class_C_capacity","class_C_price"];
     
     protected $table="flights";
+
+    public function passengers(){
+        return $this->hasMany(Passengers::class);
+    }
+    public function payments(){
+        return $this->hasMany(Payment::class);
+    }
 }

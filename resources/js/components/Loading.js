@@ -1,6 +1,6 @@
 import React from "react";
 import "../../css/loading.css";
-function Loading() {
+function Loading({ message }) {
     return (
         <div id="loadingDiv">
             <div
@@ -8,7 +8,7 @@ function Loading() {
                 className="spinner-border text-white"
                 role="status"
             ></div>
-            <h3>Please wait</h3>
+            <h3>{message}...Please wait...</h3>
         </div>
     );
 }

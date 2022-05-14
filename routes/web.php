@@ -33,3 +33,10 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 Route::get("/user-logout",[AuthController::class,'LogoutUser'])->middleware("auth");
 
 Route::post('/add-flight',[FlightsController::class,"addFlight"]);
+Route::get('/add-booking',[FlightsController::class,"fetchBookingPage"]);
+
+Route::get("/all-flights",[FlightsController::class,"getAllFlights"]);
+
+Route::get("/get-flight/{id}",[FlightsController::class,"getFlight"]);
+
+Route::post("/add-passengers",[FlightsController::class,"addPassengers"]);

@@ -8,7 +8,7 @@ import Loading from "./Loading";
 
 function AddFlight() {
     const [departureLocation, setDepartureLocation] = useState("");
-    
+
     const [destinationLocation, setDestinationLocation] = useState("");
     const [departureDate, setDepartureDate] = useState("");
     const [arrivalDate, setArrivalDate] = useState("");
@@ -18,9 +18,6 @@ function AddFlight() {
     const [classBCapacity, setClassBCapacity] = useState("");
     const [classCPrice, setClassCPrice] = useState("");
     const [classCCapacity, setClassCCapacity] = useState("");
-
-
-   
 
     const [showLoading, setShowLoading] = useState(false);
 
@@ -71,12 +68,12 @@ function AddFlight() {
                     } else {
                         setShowLoading(false);
                         console.log(res.data);
-                        swal("Error", res.data, "error");
+                        swal("Error", res.data.toString(), "error");
                     }
                 })
                 .catch((e) => {
                     setShowLoading(false);
-                    swal("Error", e, "error");
+                    swal("Error", e.toString(), "error");
                 });
         }
     };
@@ -87,7 +84,7 @@ function AddFlight() {
                 className="form row rounded border m-3 p-3 d-flex flex-column bg-light"
             >
                 <h3 className="mb-2 ms-3 ">Add Flight</h3>
-                {showLoading && <Loading />}
+                {showLoading && <Loading message={"Adding flight"} />}
                 <div className="row">
                     <div className="d-flex col-md-12 row m-3">
                         <div className="form-group col-md-6">

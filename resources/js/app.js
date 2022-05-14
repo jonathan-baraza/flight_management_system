@@ -16,3 +16,5 @@ require("./components/Example");
 require("./components/Chatbot");
 require("./components/AddFlight");
 require("./components/Loading");
+require("./components/User/Flight");
+require("./components/User/AddBooking");
